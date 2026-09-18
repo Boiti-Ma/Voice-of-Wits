@@ -1,0 +1,238 @@
+/**---CSS Reset 7 Global Styles---*/
+*{
+    margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+body{
+ background-color:rgb(141, 141, 214);
+ background-repeat: no-repeat;
+ background-position: right top;
+ background-attachment: fixed;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ text-align: center;
+ line-height: 1.6;
+
+}
+nav {
+  background-color: #0066cc; /* Blue background */
+  padding: 1rem 2rem;
+  display: posi;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navigation links */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+nav a:hover {
+  color: #e0e0e0; /* Slightly lighter white on hover */
+}
+body {
+  /* Deep Wits blue as base */
+  background-color: #003B5C; /* Official Astronaut Blue */
+
+  /* Soft gradient version (recommended) */
+  background: linear-gradient(
+    160deg,
+    #002B45 0%, /* darker navy */
+    #003B5C 40%, /* main Wits blue */
+    #0A4A6E 100% /* slightly lighter blue */
+  );
+
+  /* Optional: very subtle gold accent at the bottom */
+  background: linear-gradient(
+    160deg,
+    #002B45 0%,
+    #003B5C 55%,
+    #0A4A6E 85%,
+    #1A3A4A 100%
+  );
+
+  min-height: 100vh;
+  margin: 0;
+  color: #ffffff; /* white text works best on this blue */
+}
+
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(160deg, #002B45 0%, #003B5C 50%, #0A4A6E 100%);
+      color: #ffffff;
+      line-height: 1.7;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin: 40px 0 18px;
+      color: #F7E07A; /* Wits gold */
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 18px;
+      text-align: center;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .highlight {
+      font-weight: 600;
+      color: #F7E07A;
+      margin-top: 30px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.95rem;
+      opacity: 0.8;
+    }
+
+    /* Soft card effect for better readability */
+    section {
+      background: rgba(0, 0, 0, 0.15);
+      padding: 30px 25px;
+      border-radius: 16px;
+      margin-bottom: 30px;
+      backdrop-filter: blur(4px);
+    }
+      
+      
+/*---Resposive Design---*/
+/* Mobile Version */
+@media screen and(max-width:600px) {
+ .main.nav{
+    flex-direction: column;
+    justify-content: center;
+    align-items: centerg;
+    gap: 0.8rem;
+ }
+ .hero{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+ }
+ .hero.image img{
+    width: 300px;
+ }   
+}
+    
+/* ===== REGISTRATION FORM STYLING ===== */
+.form-section {
+  max-width: 480px;
+  margin: 0 auto 40px;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #F7E07A;
+  text-align: left;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="password"] {
+  padding: 12px 15px;
+  border: 2px solid rgba(247, 224, 122, 0.3);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #F7E07A;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-group input[type="radio"] {
+  margin-right: 6px;
+  accent-color: #F7E07A;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  padding: 14px;
+  background-color: #F7E07A;
+  color: #001F33;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #e6d06a;
+  transform: translateY(-2px);
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 0.95rem;
+}
+
+.form-footer a {
+  color: #F7E07A;
+  text-decoration: none;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}
